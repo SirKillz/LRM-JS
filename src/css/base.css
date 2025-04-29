@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
+    height: 100vh;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-section {
+    color: white;
+    margin-top: 50%
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-anchor {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-anchor:hover {
+    background-color: var(--hover-color);
+}
+
+.content {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash-error {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.flash-warning {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.flash-success {
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.delete-button {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: lightcoral;
+    color: white;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.delete-button:hover {
+    background-color: red;
+}

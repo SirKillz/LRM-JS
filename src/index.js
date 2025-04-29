@@ -1,1 +1,2 @@
-console.log("Hello, from the webpack-template!");
+import "./css/vars.css"
+import "./css/base.css"
